@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ram Yadav – Automation Developer</title>
+<meta name="description" content="I build automation for portals, inboxes, spreadsheets and maps: Python, agent workflows and API integration. Based in Jaipur.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://techshipz.github.io/">
+<meta property="og:title" content="Ram Yadav – Automation Developer">
+<meta property="og:description" content="Portal runners, agent workflows, land-rate lookups and dashboards. Selected work with screenshots.">
+<meta property="og:image" content="https://techshipz.github.io/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<script>try{if(sessionStorage.getItem('booted')==='1'||matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('booted')}catch(e){}</script>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='5' y='5' width='22' height='22' fill='none' stroke='%23C0287A' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%23C0287A'/%3E%3C/svg%3E">
+</head>
+<body>
+<div class="boot" aria-hidden="true"><pre class="boot-log"></pre><p class="boot-pct">0%</p></div>
+<div class="cursor" aria-hidden="true"><span>View</span></div>
+
+<header class="top wrap">
+  <a class="mark" href="#">Ram Yadav</a>
+  <p class="hud"><span>Jaipur, IN</span><span>26.9124° N, 75.7873° E</span><span id="clock">--:--</span><span class="ok">Systems online</span></p>
+  <nav>
+    <a href="#work">Work</a>
+    <a href="#build">Services</a>
+    <a href="#about">About</a>
+    <a class="nav-cta" href="#contact">Start a project</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <canvas id="terrain" aria-hidden="true"></canvas>
+  <div class="wrap hero-in">
+    <h1>Ram<br>Yadav</h1>
+    <p class="lede">I build automation for the dull part of a business. Today it’s <b class="rot" data-words="portals|inboxes|spreadsheets|maps|documents|dashboards">portals</b>.</p>
+    <p class="sub">Python, agent workflows and API integration. Based in Jaipur.</p>
+    <p class="cta">
+      <a class="btn" href="mailto:shriyadav1500@gmail.com?subject=Automation%20project">Start a project</a>
+      <a class="btn ghost" href="#work">See the work</a>
+    </p>
+  </div>
+  <dl class="hero-stats wrap">
+    <div><dt>Records handled by one agent run</dt><dd data-count="965">965</dd></div>
+    <div><dt>Land rates searchable offline</dt><dd data-count="63775">63,775</dd></div>
+    <div><dt>Folders sorted in a single day</dt><dd>2–3 lakh</dd></div>
+  </dl>
+</section>
+
+<div class="band" aria-hidden="true"><div class="band-track">
+  <span>Portal automation</span><span>Agent workflows</span><span>API integration</span><span>Data extraction</span>
+  <span>Dashboards</span><span>Maps &amp; GIS</span><span>Chrome extensions</span><span>Python</span>
+  <span>Portal automation</span><span>Agent workflows</span><span>API integration</span><span>Data extraction</span>
+  <span>Dashboards</span><span>Maps &amp; GIS</span><span>Chrome extensions</span><span>Python</span>
+</div></div>
+
+<section class="manifesto wrap" aria-label="How I work">
+  <p data-light>I don’t like doing the same thing twice. So I sit with the people doing it, write down the rules they follow without noticing, and teach a machine to follow them: slowly, carefully, and without guessing.</p>
+</section>
+
+<section id="work" class="wrap">
+  <h2 class="section-title">Selected work</h2>
+  <p class="section-lede">Real tools, running every day. Names and figures in the screenshots are sample data.</p>
+  <ol class="index">
+    <li><a href="#p-runner" data-img="img/entry-queue.webp" style="--c:var(--saffron)"><span>Portal Entry Runner</span><em>Python, SQLite</em><b>2026</b></a></li>
+    <li><a href="#agents" data-img="img/agents-flow.webp" style="--c:var(--turq)"><span>Agent workflow</span><em>Agents, API integration</em><b>2026</b></a></li>
+    <li><a href="#p-land" data-img="img/dlc-lookup.webp" style="--c:var(--pink)"><span>Land rate from a map pin</span><em>Python, GIS</em><b>2026</b></a></li>
+    <li><a href="#p-fill" data-img="img/ext-popup.webp" style="--c:var(--blue)"><span>Portal auto-fill</span><em>Chrome extension</em><b>2026</b></a></li>
+    <li><a href="#p-dash" data-img="img/an-alerts.webp" style="--c:var(--marigold)"><span>Dashboard in sentences</span><em>SQLite, Chart.js</em><b>2026</b></a></li>
+    <li><a href="#p-auction" data-img="img/auctions.webp" style="--c:var(--violet)"><span>Auctions on one map</span><em>Scraping, Leaflet</em><b>2026</b></a></li>
+  </ol>
+</section>
+
+<!-- ============ PORTAL RUNNER ============ -->
+<article class="project wrap reveal" id="p-runner" style="--c:var(--saffron)">
+  <header class="p-head">
+    <h3>Portal Entry Runner</h3>
+    <p class="p-sub">One spreadsheet in. Hundreds of cases walked through a web portal’s whole workflow.</p>
+  </header>
+
+  <ol class="pipe" aria-label="The workflow each case goes through">
+    <li style="--i:0">Open</li><li style="--i:1">Rework</li><li style="--i:2">Pick</li><li style="--i:3">Pin on map</li>
+    <li style="--i:4">Upload</li><li style="--i:5">Fill form</li><li style="--i:6">Submit</li><li style="--i:7">Send</li>
+  </ol>
+
+  <div class="p-grid">
+    <div class="p-copy">
+      <p>Every case on the portal had to be opened, sent back, picked up, pinned on the map, given its document, filled, submitted and finally sent to the client. By hand that is nine screens per case, a few hundred times over.</p>
+      <p>The runner reads the case list from Excel and does it the way a careful person would. Before every click it reads what the portal is actually showing, waits between requests, and if you press Stop or the connection drops, it carries on from the exact step where it paused.</p>
+      <ul class="points">
+        <li>Its requests match the browser’s own byte for byte, checked by golden tests.</li>
+        <li>37 tests run against a mock portal, so the real one is never touched while testing.</li>
+        <li>A case with a missing value is held back with the reason shown. Nothing is guessed.</li>
+      </ul>
+    </div>
+    <dl class="facts">
+      <div><dt>Built with</dt><dd>Python, requests, SQLite, a plain HTML/JS control panel</dd></div>
+      <div><dt>One full case</dt><dd>About 9 minutes, unattended</dd></div>
+      <div><dt>Safety</dt><dd>Paced 6–12 s between requests, retries with back-off, stops itself after 3 failures in a row</dd></div>
+    </dl>
+  </div>
+  <figure class="shot tilt"><button class="zoom" type="button"><img src="img/entry-queue.webp" alt="Entry queue with progress by state and a list of cases" width="1440" height="900" loading="lazy"></button>
+    <figcaption>The control panel: progress by state, filters, and each case’s last step.</figcaption></figure>
+</article>
+
+<!-- ============ AGENTS ============ -->
+<article class="project wrap reveal" style="--c:var(--turq)" id="agents">
+  <header class="p-head">
+    <h3>An agent workflow that doesn’t guess</h3>
+    <p class="p-sub">965 records pulled out of 19 different document formats, by agents working in parallel.</p>
+  </header>
+
+  <svg class="flow" viewBox="0 0 900 260" role="img" aria-label="One brief feeds parallel agents, whose output is checked and merged into one sheet">
+    <g class="edges">
+      <path d="M150 130 C240 130 250 40 330 40"/><path d="M150 130 C240 130 250 76 330 76"/>
+      <path d="M150 130 C240 130 250 112 330 112"/><path d="M150 130 C240 130 250 148 330 148"/>
+      <path d="M150 130 C240 130 250 184 330 184"/><path d="M150 130 C240 130 250 220 330 220"/>
+      <path d="M470 40 C560 40 560 130 620 130"/><path d="M470 76 C560 76 560 130 620 130"/>
+      <path d="M470 112 C560 112 560 130 620 130"/><path d="M470 148 C560 148 560 130 620 130"/>
+      <path d="M470 184 C560 184 560 130 620 130"/><path d="M470 220 C560 220 560 130 620 130"/>
+      <path d="M740 130 L790 130"/>
+    </g>
+    <g class="nodes">
+      <rect x="30" y="102" width="120" height="56" rx="8"/><text x="90" y="126">One brief</text><text class="s" x="90" y="144">rules + checks</text>
+      <rect x="330" y="24" width="140" height="32" rx="16"/><rect x="330" y="60" width="140" height="32" rx="16"/>
+      <rect x="330" y="96" width="140" height="32" rx="16"/><rect x="330" y="132" width="140" height="32" rx="16"/>
+      <rect x="330" y="168" width="140" height="32" rx="16"/><rect x="330" y="204" width="140" height="32" rx="16"/>
+      <text x="400" y="45">Agent · packet 1</text><text x="400" y="81">Agent · packet 2</text><text x="400" y="117">Agent · packet 3</text>
+      <text x="400" y="153">…</text><text x="400" y="189">Agent · packet 18</text><text x="400" y="225">Agent · packet 19</text>
+      <rect x="620" y="102" width="120" height="56" rx="8"/><text x="680" y="126">Checks</text><text class="s" x="680" y="144">sweeps + merge</text>
+      <rect class="end" x="790" y="102" width="90" height="56" rx="8"/><text x="835" y="135">One sheet</text>
+    </g>
+  </svg>
+
+  <div class="p-grid">
+    <div class="p-copy">
+      <p>Before the runner could work, each case needed its figures pulled from a finished document: address, coordinates, areas, rates and totals. I split the list into packets and wrote one brief that every agent worked from.</p>
+      <p>The brief is the real work. Read-only access, no copying a value from another case, and a blank cell with a written reason whenever something can’t be proved. Each agent had to check ten of its own cases by hand before handing back, then run sweeps over its whole packet: every coordinate had to fall inside Rajasthan, rates had to be rates and totals had to be totals.</p>
+    </div>
+    <dl class="facts">
+      <div><dt>Scale</dt><dd>965 records, 19 packets, 25 columns each</dd></div>
+      <div><dt>Approach</dt><dd>One script per format, run over the packet, then hand-checked against the signed PDF</dd></div>
+    </dl>
+  </div>
+</article>
+
+<!-- ============ LAND RATE ============ -->
+<article class="project wrap reveal" id="p-land" style="--c:var(--pink)">
+  <header class="p-head">
+    <h3>Land rate from a map pin</h3>
+    <p class="p-sub">Rajasthan’s government land rates, searchable offline and answered from a coordinate.</p>
+  </header>
+  <div class="p-grid">
+    <div class="p-copy">
+      <p>Every property valuation has to quote the government’s minimum land rate for its area. The official portal only searches by name, and people in the field come back with a coordinate.</p>
+      <p>I wrote a harvester that keeps a local copy of every rate for all 41 districts, with history and the boundary of each colony. A pin now returns its rate in milliseconds without internet, plus live land-use, zone and khasra from the state GIS, and makes the map images that go with it.</p>
+    </div>
+    <dl class="facts">
+      <div><dt>Built with</dt><dd>Python, SQLite, ArcGIS REST, Pillow</dd></div>
+      <div><dt>Data</dt><dd>63,775 current rates, history back to 2014</dd></div>
+      <div><dt>Manners</dt><dd>Paced, resumable downloads that never overload the government server</dd></div>
+    </dl>
+  </div>
+  <div class="shots two">
+    <figure class="shot tilt"><button class="zoom" type="button"><img src="img/dlc-lookup.webp" alt="Rate lookup result for a coordinate in Jaipur" width="1440" height="900" loading="lazy"></button><figcaption>A pin near Albert Hall, Jaipur, and the rate it falls under.</figcaption></figure>
+    <figure class="shot tilt"><button class="zoom" type="button"><img src="img/zdp.webp" alt="Zonal development plan map image with a red pin" width="1600" height="900" loading="lazy"></button><figcaption>The plan map it draws for the same point, fully offline.</figcaption></figure>
+  </div>
+</article>
+
+<!-- ============ AUTO-FILL ============ -->
+<article class="project wrap reveal" id="p-fill" style="--c:var(--blue)">
+  <header class="p-head">
+    <h3>Portal auto-fill</h3>
+    <p class="p-sub">A Chrome extension that types a finished Excel file into eight different lender portals.</p>
+  </header>
+  <div class="p-grid">
+    <div class="p-copy">
+      <p>Some portals want the same data typed in field by field: 60 to 380 fields a case. The extension reads the case’s Excel file and fills the form. It finds values by their labels rather than fixed cells, so a slightly different layout still works, and it flags a section in red instead of guessing. Saving and submitting stay a person’s click.</p>
+      <p>It began as five separate extensions. I merged them into one core with a small plug-in per portal after a review found the same bugs copied into all five.</p>
+    </div>
+    <dl class="facts">
+      <div><dt>Built with</dt><dd>JavaScript (Manifest V3), SheetJS, a Node test harness</dd></div>
+      <div><dt>Tested on</dt><dd>633 real past files for one portal: 3,798 of 3,798 option fields read right</dd></div>
+    </dl>
+  </div>
+  <div class="shots two narrow">
+    <figure class="shot tilt"><button class="zoom" type="button"><img src="img/ext-popup.webp" alt="Extension popup with one tile per portal" width="900" height="1058" loading="lazy"></button><figcaption>One extension, one tile per portal.</figcaption></figure>
+    <figure class="shot tilt"><button class="zoom" type="button"><img src="img/icici-filler.webp" alt="Section-by-section fill panel on a portal" width="987" height="537" loading="lazy"></button><figcaption>Section by section, with a count of the fields it will fill.</figcaption></figure>
+  </div>
+</article>
+
+<!-- ============ ANALYTICS ============ -->
+<article class="project wrap reveal" id="p-dash" style="--c:var(--marigold)">
+  <header class="p-head">
+    <h3>A dashboard that talks in sentences</h3>
+    <p class="p-sub">Three years of monthly exports turned into something the owner reads every morning.</p>
+  </header>
+  <div class="p-grid">
+    <div class="p-copy">
+      <p>36,000 case records sat in separate monthly spreadsheets. I loaded them into SQLite and built a dashboard on top: which clients are growing, which have gone quiet, how the month is tracking, which weekdays are busiest.</p>
+      <p>The alerts read like a colleague wrote them: “no cases from this client for 74 days, worth a call.” An assistant answers questions using only the firm’s own numbers.</p>
+    </div>
+    <dl class="facts">
+      <div><dt>Built with</dt><dd>Python, SQLite, Chart.js</dd></div>
+      <div><dt>Data</dt><dd>36,308 records, 2023–2026</dd></div>
+    </dl>
+  </div>
+  <div class="shots three">
+    <figure class="shot"><button class="zoom" type="button"><img src="img/an-range.webp" alt="Monthly chart and client comparison table" width="1132" height="797" loading="lazy"></button><figcaption>This year against the last, by client.</figcaption></figure>
+    <figure class="shot"><button class="zoom" type="button"><img src="img/an-alerts.webp" alt="Alerts written in plain sentences" width="1132" height="852" loading="lazy"></button><figcaption>Alerts in plain sentences.</figcaption></figure>
+    <figure class="shot"><button class="zoom" type="button"><img src="img/an-heat.webp" alt="Heatmaps by day and branch" width="1132" height="873" loading="lazy"></button><figcaption>Heatmaps by day and branch.</figcaption></figure>
+  </div>
+</article>
+
+<!-- ============ AUCTIONS ============ -->
+<article class="project wrap reveal" id="p-auction" style="--c:var(--violet)">
+  <header class="p-head">
+    <h3>Every bank auction in the state, on one map</h3>
+    <p class="p-sub">Three auction sites scraped each morning, scored against the district median.</p>
+  </header>
+  <div class="p-grid">
+    <div class="p-copy">
+      <p>Auction notices are spread over three websites in three formats. This collects them daily, keeps Rajasthan only, pins each property and compares its reserve price per sq ft with the median for its district, so a cheap listing stands out.</p>
+    </div>
+    <dl class="facts">
+      <div><dt>Built with</dt><dd>Python, Flask, BeautifulSoup, Leaflet</dd></div>
+      <div><dt>Last run</dt><dd>1,266 properties across 47 districts</dd></div>
+    </dl>
+  </div>
+  <figure class="shot tilt"><button class="zoom" type="button"><img src="img/auctions.webp" alt="Auction list beside a map of Rajasthan" width="1440" height="900" loading="lazy"></button><figcaption>List and map side by side.</figcaption></figure>
+</article>
+
+<!-- ============ SMALLER ============ -->
+<section class="wrap more reveal">
+  <h2 class="section-title">Smaller builds</h2>
+  <div class="tools">
+    <article><h3>Inbox triage agent</h3><p>Sorts a busy inbox into new work, questions and billing, routes each to the right team with buttons to take or snooze it, and chases anything unanswered. Before building it I measured two years of mail: median reply time was 16.7 hours.</p><p class="stack">Apps Script, Llama 3.3, Telegram Bot API</p></article>
+    <article><h3>Email to portal intake</h3><p>Turns incoming request emails into new cases on a portal. Checks for duplicates, fills the bulk-upload sheet with validated values, uploads, then confirms every row actually arrived.</p><p class="stack">Python, requests, openpyxl</p></article>
+    <article><h3>Digital signing queue</h3><p>Signs PDFs with a USB signature token from a queue with approval. It checks the token’s certificate before sending the PIN, so a wrong token can never get locked.</p><p class="stack">Python, pyHanko, PKCS#11</p></article>
+    <article><h3>Invoice automation</h3><p>Watches case folders, works out each fee from its slab, fills the invoice and keeps the register in step. Built so that one case can only ever produce one invoice.</p><p class="stack">Python, openpyxl</p></article>
+    <article><h3>Map image makers</h3><p>Coordinate in, ready-to-use map out: a plan-map crop or a satellite view with the same pin, legend and scale bar.</p><p class="stack">Python, Pillow, KML</p></article>
+    <article><h3>Nearby records and RERA</h3><p>Finds the closest of 31,500 past records to any point, and pulls every RERA project in Jaipur into a sheet and Google Earth.</p><p class="stack">Python, SQLite</p></article>
+  </div>
+</section>
+
+<!-- ============ CONSOLE ============ -->
+<section class="wrap console-sec reveal">
+  <h2 class="section-title">Try the console</h2>
+  <p class="section-lede">Type a command and press Enter. Start with <code>help</code>.</p>
+  <div class="console">
+    <div class="c-bar"><i></i><i></i><i></i><span>ram@jaipur: ~/automation</span></div>
+    <pre class="c-out" aria-live="polite"></pre>
+    <form class="c-in"><label for="cmd">&gt;</label><input id="cmd" autocomplete="off" spellcheck="false" placeholder="help"></form>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="wrap build reveal" id="build">
+  <h2 class="section-title">What I can build for you</h2>
+  <p class="section-lede">If a person on your team does the same steps every day, there is usually a tool hiding in it.</p>
+  <div class="build-grid">
+  <div class="cube-wrap" aria-hidden="true"><div class="cube">
+    <b style="--f:0">Portals</b><b style="--f:1">Agents</b><b style="--f:2">APIs</b>
+    <b style="--f:3">Data</b><b style="--f:4">Dashboards</b><b style="--f:5">Maps</b>
+  </div></div>
+  <ul class="services">
+    <li><h3>Portal and form automation</h3><p>Anything your team types from one system into another.</p></li>
+    <li><h3>Agent workflows</h3><p>Multi-step jobs split across agents with clear rules, self-checks and a human sign-off.</p></li>
+    <li><h3>API integration</h3><p>Your tools talking to each other, so data moves without copy-paste.</p></li>
+    <li><h3>Data extraction</h3><p>The numbers inside PDFs, scans and old spreadsheets, in one clean sheet.</p></li>
+    <li><h3>Dashboards</h3><p>Exports nobody opens, turned into a page people check every morning.</p></li>
+    <li><h3>Maps and GIS</h3><p>Coordinates in; land data, boundaries and map images out.</p></li>
+  </ul>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="wrap about reveal" id="about">
+  <figure class="portrait">
+    <div class="frame"><img src="img/ram.webp" alt="Ram Yadav" width="720" height="720" loading="lazy"></div>
+    <figcaption><span class="dot"></span>Jaipur, Rajasthan</figcaption>
+  </figure>
+  <div class="about-copy">
+    <h2 class="section-title">Hi, I’m Ram.</h2>
+    <p>I’m 21 and I live in Jaipur. I studied maths and physics, and my first job was data entry.</p>
+    <p>That’s where I got hooked on one question: why is a person doing this by hand, every single day? I’ve been answering it ever since, first with scripts, then with portal runners, map tools and agent workflows.</p>
+    <p>I work best on real, messy processes. I sit with the people who run them, write down the rules they follow without noticing, and turn those rules into something that runs on its own and says so when it isn’t sure.</p>
+  </div>
+</section>
+
+<!-- ============ PATH ============ -->
+<section class="wrap path reveal" id="path">
+  <h2 class="section-title">How I got here</h2>
+  <ol class="timeline">
+    <li><p class="when">2024</p><h3>Six months of folder sorting, done in two weeks</h3><p>My first job was data entry. Handed 2–3 lakh folders to match against a spreadsheet by hand, I wrote a script that matched the messy names instead and finished in under two weeks.</p></li>
+    <li><p class="when">2025</p><h3>New field, first month</h3><p>Moved into GIS without knowing QGIS or ArcGIS. Learned both in the first month, then automated about 70% of the production pipeline and trained eight new people on it.</p></li>
+    <li><p class="when">2026</p><h3>Portals, agents and internal tools</h3><p>Now I build portal runners, agent workflows and the tools a team uses every day. My degree is a B.Sc.-B.Ed. in Mathematics and Physics; the rest I learned by building.</p></li>
+  </ol>
+</section>
+
+<section class="wrap contact reveal" id="contact">
+  <h2>Have a task your team repeats every day?</h2>
+  <p>Tell me how it’s done today. I’ll tell you what can be automated and what it would take.</p>
+  <p class="cta">
+    <a class="btn" href="mailto:shriyadav1500@gmail.com?subject=Automation%20project">shriyadav1500@gmail.com</a>
+    <a class="btn ghost" href="http://www.linkedin.com/in/yadav00ram">LinkedIn</a>
+    <a class="btn ghost" href="https://github.com/techshipz">GitHub</a>
+  </p>
+</section>
+
+</main>
+
+<footer class="wrap foot">
+  <p>© 2026 Ram Yadav. Screenshots use sample data; client names and source code stay private.</p>
+  <nav class="foot-links">
+    <a class="resume-btn" href="resume.pdf" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+  </nav>
+</footer>
+
+<dialog class="lightbox" aria-label="Screenshot">
+  <form method="dialog"><button class="lb-close">Close</button></form>
+  <img alt="">
+</dialog>
+
+<script type="module" src="main.js"></script>
+<script type="module" src="room.js"></script>
+</body>
+</html>
