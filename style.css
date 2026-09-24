@@ -126,7 +126,7 @@ figcaption { font: .9rem/1.45 var(--sans); color: var(--muted); margin-top: 12px
 
 /* ---------- runner pipeline ---------- */
 .pipe { position: relative; list-style: none; padding: 0; margin: 0 0 42px; display: grid; grid-template-columns: repeat(8, 1fr); gap: 8px; font: 700 .88rem var(--sans); }
-.pipe li { text-align: center; padding: 12px 6px; border-radius: 999px; background: var(--panel); border: 1.5px solid var(--rule); color: var(--muted); animation: step 8s linear infinite; animation-delay: calc(var(--i) * 1s); }
+.pipe li { display: flex; align-items: center; justify-content: center; text-align: center; line-height: 1.25; padding: 12px 6px; border-radius: 999px; background: var(--panel); border: 1.5px solid var(--rule); color: var(--muted); animation: step 8s linear infinite; animation-delay: calc(var(--i) * 1s); }
 @keyframes step {
   0%, 11% { color: #fff; background: var(--c); border-color: var(--c); transform: translateY(-4px); box-shadow: 0 12px 24px -10px var(--c); }
   13%, 100% { color: var(--muted); background: var(--panel); border-color: var(--rule); transform: none; box-shadow: none; }
@@ -207,7 +207,7 @@ figcaption { font: .9rem/1.45 var(--sans); color: var(--muted); margin-top: 12px
   .p-grid, .shots.two, .shots.two.narrow, .build-grid { grid-template-columns: 1fr; gap: 28px; }
   .shots.three, .tools, .services { grid-template-columns: 1fr 1fr; }
   .timeline { grid-template-columns: 1fr; }
-  .pipe { grid-template-columns: repeat(4, 1fr); }
+  .pipe { grid-template-columns: repeat(4, 1fr); grid-auto-rows: 1fr; }
   .hero::after { background: linear-gradient(0deg, rgba(21,15,56,.95) 35%, rgba(21,15,56,.4)); }
 }
 @media (max-width: 560px) {
