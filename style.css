@@ -57,6 +57,7 @@ h1, h2, h3 { font-family: var(--sans); line-height: 1.06; margin: 0; }
   animation: rise 1.2s var(--ease) both, shimmer 9s linear infinite;
 }
 @keyframes shimmer { to { background-position: 220% 0; } }
+.hello { font: 600 clamp(1.1rem, 1.8vw, 1.5rem) var(--sans); color: rgba(255,255,255,.78); margin: 0 0 6px 6px; animation: rise 1s var(--ease) both; }
 .lede { font-size: clamp(1.25rem, 2.1vw, 1.6rem); max-width: 25em; margin: 0 0 10px; }
 .sub { color: rgba(255,255,255,.7); margin: 0; }
 .cta { display: flex; flex-wrap: wrap; gap: 12px; margin: 32px 0 0; }
